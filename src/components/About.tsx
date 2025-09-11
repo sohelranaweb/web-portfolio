@@ -70,18 +70,18 @@
 import { Button } from "@/components/ui/button";
 import { Folder, Download } from "lucide-react";
 
-import Image from "../assets/images/banner-img.png";
+import Image from "../assets/images/about-image.png";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="w-full bg-gray-50 py-16 h-screen scroll-mt-16"
+      className="w-full bg-gray-50 py-16 lg:h-screen scroll-mt-16"
     >
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Left - Profile Image */}
         <div className="flex justify-center relative">
-          <div className="rounded-2xl overflow-hidden shadow-lg bg-purple-50 p-4">
+          <div className="rounded-2xl overflow-hidden p-4">
             <img
               src={Image}
               alt="Profile"

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "../assets/images/banner-img.png";
+import Image from "../assets/images/about-image.png";
 
 export default function Banner() {
   return (
@@ -13,9 +13,11 @@ export default function Banner() {
         {/* Left Content */}
         <div className="text-center lg:text-left max-w-xl">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Hello, I’m <br />
-            <span className="text-gray-900">Sohel Rana</span>
+            Hello, I’m
+            <span className="text-gray-900"> Sohel Rana</span>
           </h1>
+
+          <h1 className="text-xl font-bold">MERN Stack Developer</h1>
 
           <p className="mt-4 text-gray-600 leading-relaxed">
             I'm a Freelance{" "}
@@ -37,7 +39,7 @@ export default function Banner() {
               asChild
             >
               <a
-                href="https://drive.google.com/file/d/1UpPH1wQsgKg_pdE2LJaA1e-1LlBRAa3I/view?usp=sharing"
+                href="https://drive.google.com/file/d/1rgNGLhsKPsYDlmHgJGuGCl79FKF6GOVH/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -64,8 +66,13 @@ export default function Banner() {
         </div>
 
         {/* Right Image */}
-        <div className="flex justify-center lg:justify-end">
-          <img src={Image} alt="" />
+
+        <div className="flex justify-center lg:justify-end w-full lg:w-1/2">
+          <img
+            src={Image}
+            alt="Sohel Rana - UI/UX Designer and Developer"
+            className="rounded-2xl shadow-lg object-cover w-full max-w-md transition-transform duration-300 hover:scale-105"
+          />
         </div>
       </div>
     </section>

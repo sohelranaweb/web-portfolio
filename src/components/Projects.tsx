@@ -1,28 +1,38 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 
 const projects = [
+  {
+    category: "UI-UX DESIGN",
+    title: "Digital Wallet Management",
+    description:
+      "DigiCash Frontend is a modern, responsive web application designed to provide users with a seamless digital wallet experience, similar to Bkash, Nagad, or Rocket.",
+    image: "https://i.ibb.co.com/Nnn11gzw/digicash.png",
+    liveLink: "https://digicash-client.vercel.app",
+    frontendRepo:
+      "https://github.com/sohelranaweb/digicash-management-system-fronted-",
+    backendRepo:
+      "https://github.com/sohelranaweb/digicash-management-system-backend",
+  },
+  {
+    category: "UI-UX DESIGN",
+    title: "Library Management",
+    description:
+      "A modern web-based Library Management System built with React, TypeScript, Redux Toolkit (RTK Query), Tailwind CSS, and ShadCN UI. It allows users to manage books, borrow records, and maintain a clean and user-friendly interface.",
+    image: "https://i.ibb.co.com/ZRXWhyvX/library.png",
+    liveLink: "https://library-management-client-five.vercel.app",
+    frontendRepo: "https://github.com/sohelranaweb/library-management-client",
+    backendRepo: "https://github.com/sohelranaweb/library-management",
+  },
   {
     category: "UI-UX DESIGN",
     title: "Hotel Management System",
     description:
       "A Hotel Management System (HMS) is a software application that helps hotels and resorts manage their daily operations efficiently.",
     image: "https://i.ibb.co.com/7dRBrhH7/project2.png",
-  },
-  {
-    category: "UI-UX DESIGN",
-    title: "Job Hunting",
-    description:
-      "Jobbe is an online platform that connects job seekers with employers. It allows candidates to create profiles, upload resumes, and search for job opportunities based on location, skills, or industry.",
-    image: "https://i.ibb.co.com/WNJQ3F4K/project3.png",
-  },
-  {
-    category: "UI-UX DESIGN",
-    title: "Education Management",
-    description:
-      "An Education Management System (EMS) is a software platform designed to streamline and automate administrative and academic activities in educational institutions like schools, colleges, and universities.",
-    image: "https://i.ibb.co.com/KcF1fmQw/project4.png",
+    liveLink: "https://hotelier-client.web.app",
+    frontendRepo: "https://github.com/sohelranaweb/hotelier-client",
+    backendRepo: "https://github.com/sohelranaweb/hotelier-server",
   },
 ];
 
@@ -37,7 +47,6 @@ export default function Projects() {
           user-centric and visually appealing interfaces.
         </p>
       </div>
-
       {/* Project Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
@@ -54,9 +63,45 @@ export default function Projects() {
               <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
               <p className="text-gray-600 text-sm">{project.description}</p>
             </CardContent>
-            <CardFooter className="p-6 pt-0">
-              <Button variant="outline" className="flex items-center gap-2">
-                Case Study <ArrowRight className="w-4 h-4" />
+            <CardFooter className="p-6 pt-0 flex flex-wrap gap-3">
+              <Button
+                asChild
+                variant="outline"
+                className="flex items-center gap-2 text-sm"
+              >
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Site
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="flex items-center gap-2 text-sm"
+              >
+                <a
+                  href={project.frontendRepo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Frontend Repo
+                </a>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="flex items-center gap-2 text-sm"
+              >
+                <a
+                  href={project.backendRepo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Backend Repo
+                </a>
               </Button>
             </CardFooter>
           </Card>
