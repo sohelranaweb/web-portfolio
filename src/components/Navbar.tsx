@@ -292,7 +292,7 @@ export default function Navbar() {
             className="mt-2 bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white font-semibold"
           >
             <a
-              href="https://drive.google.com/file/d/1UpPH1wQsgKg_pdE2LJaA1e-1LlBRAa3I/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rgNGLhsKPsYDlmHgJGuGCl79FKF6GOVH/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
