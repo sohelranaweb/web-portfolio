@@ -70,7 +70,7 @@
 import { Button } from "@/components/ui/button";
 import { Folder, Download } from "lucide-react";
 
-import Image from "../assets/images/about-image.png";
+import Image from "../assets/images/about-img.jpeg";
 
 export default function About() {
   return (

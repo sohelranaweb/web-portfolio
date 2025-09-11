@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import Image from "../assets/images/about-image.png";
+import Image from "../assets/images/about-img.jpeg";
 
 export default function Banner() {
   return (
