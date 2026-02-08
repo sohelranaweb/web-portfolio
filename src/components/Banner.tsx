@@ -39,7 +39,7 @@ export default function Banner() {
               asChild
             >
               <a
-                href="https://drive.google.com/file/d/1rgNGLhsKPsYDlmHgJGuGCl79FKF6GOVH/view?usp=sharing"
+                href="https://drive.google.com/file/d/18iGK2fBchAH-rzANGafD3OrcA24rIDzR/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >

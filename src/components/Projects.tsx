@@ -4,6 +4,26 @@ import { Button } from "@/components/ui/button";
 const projects = [
   {
     category: "UI-UX DESIGN",
+    title: "SR Care",
+    description:
+      "Developed AI-powered healthcare platform with Next.js achieving 92% doctor-matching accuracy, featuring multi-role dashboards, appointment scheduling, video consultations, secure payments, and HIPAA-compliant medical records across 20+ specialties",
+    image: "https://i.ibb.co.com/23fkNhCS/sr-care.png",
+    liveLink: "https://sr-health-care-frontend.vercel.app",
+    frontendRepo: "https://github.com/sohelranaweb/sr-health-care-frontend",
+    backendRepo: "https://github.com/sohelranaweb/sr-health-care-backend",
+  },
+  {
+    category: "UI-UX DESIGN",
+    title: "Travel Buddy",
+    description:
+      "Developed social travel platform enabling users to find compatible travel partners through AI-powered matching based on destinations, interests, budget, and travel dates",
+    image: "https://i.ibb.co.com/4nS6XDk7/travel-buddy.png",
+    liveLink: "https://travel-buddy-client-taupe.vercel.app",
+    frontendRepo: "https://github.com/sohelranaweb/travel-buddy-client",
+    backendRepo: "https://github.com/sohelranaweb/travel-buddy-server",
+  },
+  {
+    category: "UI-UX DESIGN",
     title: "Digital Wallet Management",
     description:
       "DigiCash Frontend is a modern, responsive web application designed to provide users with a seamless digital wallet experience, similar to Bkash, Nagad, or Rocket.",
